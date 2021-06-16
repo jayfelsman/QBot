@@ -1,56 +1,56 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.5",
-  "version": "1.0.0",
-  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
-  "packageName": "qbot",
-  "developer": {
-    "name": "UNSW Sydney",
-    "websiteUrl": "https://www.unsw.edu.au/QBot",
-    "privacyUrl": "https://www.unsw.edu.au/QBot/privacy",
-    "termsOfUseUrl": "https://www.unsw.edu.au/QBot/tou"
-  },
-  "icons": {
-    "outline": "Outline.png",
-    "color": "Color.png"
-  },
-  "name": {
-    "short": "Question",
-    "full": "Question - The Community Learning App"
-  },
-  "description": {
-    "short": "QBot",
-    "full": "QBot keeps track of answered and unanswered questions, sends notifications to tutors and teachers in charge, and dynamically constructs its own knowledge database on the subject to help suggest answers in future. Just tag @Question in the conversations tab of your class team."
-  },
-  "accentColor": "#6264A7",
-  "configurableTabs": [
-      {
-        "configurationUrl": "https://qbot-questions-tab.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
-        "canUpdateConfiguration": true,
-        "scopes": [
-          "team"
-        ]
-      }
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "8b2aecd3-8642-4a6d-86e8-e6727384dc2a",
+    "packageName": "cduqbot",
+    "developer": {
+        "name": "CDU Darwin",
+        "websiteUrl": "https://www.cdu.edu.au/QBot",
+        "privacyUrl": "https://www.cdu.edu.au/QBot/privacy",
+        "termsOfUseUrl": "https://www.cdu.edu.au/QBot/tou"
+    },
+    "icons": {
+        "outline": "Outline.png",
+        "color": "Color.png"
+    },
+    "name": {
+        "short": "Question",
+        "full": "Question - The Community Learning App"
+    },
+    "description": {
+        "short": "QBot",
+        "full": "QBot keeps track of answered and unanswered questions, sends notifications to tutors and teachers in charge, and dynamically constructs its own knowledge database on the subject to help suggest answers in future. Just tag @Question in the conversations tab of your class team."
+    },
+    "accentColor": "#6264A7",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://cduqbot-questions.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team"
+            ]
+        }
     ],
-  "bots": [
-    {
-      "botId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
-      "scopes": [
-        "team"
-      ]
-    }
-  ],
-  "staticTabs": [
-    {
-      "entityId": "DashboardTab",
-      "name": "Dashboard",
-      "contentUrl": "https://qbot-dashboard-tab.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
-      "scopes": [ "personal" ]
-    }
-  ],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [ "qbot-dashboard-tab.azurewebsites.net", "qbot-questions-tab.azurewebsites.net", "qbot-api.azurewebsites.net" ]
+    "bots": [
+        {
+            "botId": "8b2aecd3-8642-4a6d-86e8-e6727384dc2a",
+            "scopes": [
+                "team"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "DashboardTab",
+            "name": "Dashboard",
+            "contentUrl": "https://cduqbot-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
+            "scopes": [ "personal" ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [ "cduqbot-dashboard.azurewebsites.net", "cduqbot-questions.azurewebsites.net", "cduqbot.azurewebsites.net" ]
 }
