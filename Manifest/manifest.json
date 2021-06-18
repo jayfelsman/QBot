@@ -25,7 +25,7 @@
     "accentColor": "#6264A7",
     "configurableTabs": [
         {
-            "configurationUrl": "https://cduqbottest-questions.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
+            "configurationUrl": "https://cduqbot-questions.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team"
@@ -44,7 +44,7 @@
         {
             "entityId": "DashboardTab",
             "name": "Dashboard",
-            "contentUrl": "https://cduqbot-test-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
+            "contentUrl": "https://cduqbot-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
             "scopes": [ "personal" ]
         }
     ],
