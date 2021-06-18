@@ -44,7 +44,7 @@
         {
             "entityId": "DashboardTab",
             "name": "Dashboard",
-            "contentUrl": "https://cduqbottest-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
+            "contentUrl": "https://cduqbot-test-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
             "scopes": [ "personal" ]
         }
     ],
